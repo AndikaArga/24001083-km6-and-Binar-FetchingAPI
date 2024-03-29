@@ -27,7 +27,6 @@ const GameList = () => {
             },
           }
         );
-        console.log("Response data:", response.data);
         setGames(response.data);
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -55,8 +54,7 @@ const GameList = () => {
               "X-RapidAPI-Host": "free-to-play-games-database.p.rapidapi.com",
             },
           }
-        );
-        console.log("Response data:", response.data);
+        )
         setGamesPopular(response.data);
       } catch (error) {
         console.error("Error fetching data:", error);

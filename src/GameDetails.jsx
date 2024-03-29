@@ -23,7 +23,7 @@ export default function GameDetails() {
             },
           }
         );
-        console.log("Response data:", response.data);
+
         setGame(response.data);
       } catch (error) {
         console.error("Error fetching data:", error);

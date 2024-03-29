@@ -28,7 +28,7 @@ const GameCategory = () => {
             },
           }
         );
-        console.log("Response data:", response.data);
+
         setGames(response.data);
         setLoading(false);
       } catch (error) {
@@ -59,7 +59,7 @@ const GameCategory = () => {
             },
           }
         );
-        console.log("Response data:", response.data);
+        
         setGamesPopular(response.data);
       } catch (error) {
         console.error("Error fetching data:", error);
